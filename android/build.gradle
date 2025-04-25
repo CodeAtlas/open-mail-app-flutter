@@ -2,14 +2,14 @@ group 'com.homex.open_mail_app'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.8.21'
+    ext.kotlin_version = '2.1.10'
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.0'
+        classpath 'com.android.tools.build:gradle:8.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -44,7 +44,7 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-        compileSdk 33
+        compileSdk 35
     }
 
     lintOptions {
@@ -54,5 +54,5 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.google.code.gson:gson:2.12.0'
 }
